@@ -1,0 +1,57 @@
+/* ABOUT flex-shrink, flex-basis */
+
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    height: 600px;
+    flex-direction: row; /* row is default value */
+    justify-content: center;  /* works on main axis */
+    align-items: center;     /* works on cross axis */
+
+    gap: 10px; /* instead of giving "margin" in "box" & use to give gap between flex-items */
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    /* margin: 5px; */
+}
+
+.first{
+    background-color: orange;
+    /* flex-basis: 200px; */
+    /* 
+    flex-basis changes the height/width of flex-item according to the value given towards/around the main axis.
+    just change the flex-direction to column & see the effect of flex-basis in #container.
+
+    if flex-direction is row or row-reverse then flex-basis will change the width of flex-item.
+    if flex-direction is column or column-reverse then flex-basis will change the height of flex-item.
+    200px is given to flex-basis, so width of first box will be 200px.
+    100px is given to width of box, but flex-basis will override it.
+    100px is given to height of box, but flex-basis will not override it.
+    */
+}
+
+.second{
+    background-color: green;
+    flex-shrink: 4;
+    /* flex-basis: 300px; */
+}
+/* 
+flex-shrink property is used to reduce/shrink the size of flex-item if there is no enough space in the flex-container.
+Default value of flex-shrink is 1 for all flex-items, if we give flex-shrink:0 then it will not reduce/shrink the size of flex-item.
+If all flex-items have flex-shrink value>0 then shortage of space will be reduced/shrink according to the flex-shrink value.
+
+flex-shrink:4, means if there is no enough space in the flex-container then this flex-item will reduce/shrink its size 4 times more faster than other flex-items.
+*/
+
+.third{
+    background-color: red;
+    align-self: flex-end; /* flex-self: flex-start | flex-end | center | baseline | stretch */
+    /* align-self property is used to override the align-items property for individual flex-item. */
+}
+
+.fourth{
+    background-color: chartreuse;
+
+}

@@ -1,0 +1,252 @@
+/* Inline vs Block Element */
+/* span{
+    color: blue;
+    background-color: pink;
+}
+
+h1{
+    background-color: aqua;
+} */
+/* 
+"Block Element" takes/consumes full width of screen while
+"Inline Element" takes/consumes as much width of screen which 
+is needed to display the text/conent
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+There is an default margin & padding which is applicable/present to each html page.
+For removing/overwriting these default margin & padding we use "*"(universal selector)
+*/
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+
+span{
+    color: blue;
+    background-color: pink;
+}
+
+h1{
+    background-color: aqua;
+    padding: 20px;
+} */
+
+
+
+
+
+
+
+
+/*
+Block level elements always starts from a new line while
+inline elements not.
+
+"height" & "width" is applicable on block level elements &
+not applicable on inline elements.
+*/
+
+/* span{
+    color: blue;
+    background-color: pink;
+    height: 200px;
+    width:300px;
+}  */
+/* "height" & "width" is NOT applicable */
+
+
+/* h1{
+    background-color: aqua;
+    padding: 20px;
+    height: 200px;
+    width:300px;
+}  */
+/* "height" & "width" is applicable */
+
+/* h2{
+    background-color: brown;
+} */
+
+
+
+
+
+
+
+
+
+/*
+Only horizontal margin & padding is applicable on inline elements
+*/
+
+span{
+    background-color: pink;
+    height: 200px;
+    width: 300px;
+    /* padding: 20px;
+    margin: 20px; */
+    margin-bottom: 150px;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+    /* display: block; */
+} /* "height" & "width" is NOT applicable */
+
+/* h1{
+    background-color: aqua;
+    padding: 20px;
+    height: 200px;
+    width:300px;
+} */
+
+/* h2{
+    background-color: brown;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* 
+For making block level element to inline element
+*/
+
+/* h1{
+    background-color: aqua;
+    height: 200px;
+    width:300px;
+    display: inline;
+}
+
+h2{
+    background-color: brown;
+    display: inline;
+} */
+/*
+Now, "h1" & "h2" becomes/behaves like an inline element &
+"height" & "width" is NOT applicable
+*/
+
+
+
+
+
+
+
+
+
+
+/* 
+For converting inline element into block level element
+*/
+/* .spanblock{
+    background-color: violet;
+    display: block;
+} */
+/*
+Now, 3rd & 4th span becomes/behaves like an block level element &
+now, "height" & "width" is  applicable
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* Use of "inline-block" */
+
+h1{
+    background-color: aqua;
+    height: 200px;
+    width:300px;
+    display: inline-block;
+}
+
+h2{
+    background-color: brown;
+     height: 200px;
+    width:300px;
+    display: inline-block;
+}
+/*
+ Now, "h1" & "h2" behaves as both inline & block level element, "Best of both Worlds" Combination
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* Use of "box-sizing" */
+/* 
+By default, box-sizing: content-box; means given "height" & "width" is
+taken by "content" of css box model only.
+
+box-sizing: content-box;------> given "height" & "width" is content's "height" & "width"
+or measure "height" & "width" from "content"
+*/
+
+
+/*
+If we give box-sizing: border-box; then given "height" & "width" is
+taken by "content", "padding" & "border".
+
+box-sizing: border-box;------> given "height" & "width" combines "content", "padding" & "border"
+or measure "height" & "width" from "border"
+*/
+
+/* 
+border-box = border-width+padding-width+content-width = width(300px)
+content-box = content-width = 300px  (by default present, if specified or not)
+
+Same for height...
+*/
+
+/* Inspect box model of both "h1" & "h2" for understanding */
+
+h1{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    border: 10px solid orange;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+h2{
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+    border: 10px solid orange;
+    padding: 20px;
+    box-sizing: border-box;
+}

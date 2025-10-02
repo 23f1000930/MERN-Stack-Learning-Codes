@@ -1,0 +1,82 @@
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    /* flex-direction: row; */ /*  default value */
+    /* flex-direction: column; */ /* to arrange flex-items in column direction */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    height: 600px;
+    justify-content: center;  /* works on main axis */
+    align-items: center;     /* works on cross axis */
+    /* align-items: end; */
+    
+    /* flex-wrap: nowrap; */  /* default value */
+    flex-wrap: wrap;  /* to wrap flex-items in next line */
+    /* flex-wrap: wrap-reverse; */
+
+    gap: 10px; /* instead of giving "margin" in "box" & use to give gap between flex-items */
+}
+/* 
+"div" element with id as "container" is a parent element(flex-container) which decides the layout of its child elements(flex-items).
+Here, all "div" elements with class as "box" are child elements(flex-items) of that parent element.
+
+So, on "display: flex"==> parent element becomes a flex-container & all its child elements become flex-items and convert its child elements
+into inline-block elements.
+*/
+
+/* 
+Main Axis decided by "flex-direction" property, if flex-direction is row or row-reverse then main axis will be horizontal axis
+& if "flex-direction" is column or column-reverse then main axis will be vertical axis.
+And cross axis will be perpendicular to main axis.
+*/
+
+/* "justify content", main axis ke around kaam karta hai
+& main axis decide kun karega, aapka "flex direction" */
+/* "align items" work around cross axis */
+
+.box{
+    height: 100px;
+    width: 100px;
+    /* margin: 5px; */
+}
+
+.first{
+    background-color: orange;
+    flex-grow: 1; 
+    /* flex-grow, default value is 0, it will take only that much space which is required by content
+    but if we give flex-grow value>0 then it will take extra space also according to the value given.
+    If all flex-items have flex-grow value>0 then extra space will be distributed according to the flex-grow value.
+
+    flex-grow gives the way so, that flex-items can consume extra space.
+    */
+}
+
+.second{
+    background-color: green;
+    flex-grow: 2;
+}
+
+.third{
+    background-color: red;
+    flex-grow: 3;
+}
+
+.fourth{
+    background-color: chartreuse;
+
+}
+
+/* 
+flex-grow of first, second & third box is given as 1, 2 & 3 respectively.
+So, if extra space is there then, extra space will be distributed in the ratio of 1:2:3 among first, second & third box respectively.
+or 
+1+2+3=6 parts will happpen to extra space left, out of which
+1 part will go to first box,
+2 parts will go to second box,
+3 parts will go to third box.
+*/

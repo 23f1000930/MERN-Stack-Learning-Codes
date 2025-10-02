@@ -1,0 +1,105 @@
+/* h1{
+    background-color: aqua;
+}
+
+#firstId{
+    background-color: pink;
+}  
+
+.classA{
+    background-color: green;
+}
+
+li{
+    background-color: green;
+} */
+
+/* Inline CSS(more specifically targets an html element) > CSS by Id > CSS by Class > CSS by Tag */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* h1{
+    background-color: aqua;
+}
+
+h1{
+    background-color: pink;
+} 
+
+#secondId{
+    background-color: yellow;
+}
+
+#secondId{
+    background-color: orange;
+    background-color: wheat;
+} */
+
+/* 
+When there are multiple same specificities, then the one which comes later in the code gets the preference.
+or when there is a tie in specifications, then ordering (the one which comes later in the code gets the preference) is important.
+But, everytime same element is target by same selector (id, class or tag).
+
+Inline CSS(more specifically targets an html element) > CSS by Id > CSS by Class > CSS by Tag > Ordering(Tie)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For overriding css */
+/* h3{
+    background-color: aquamarine !important;
+    background-color: red;
+}
+
+h3{
+    background-color: red !important;
+} */
+/* 
+where "!imporortant" is written > Inline CSS(more specifically targets an html element) > CSS by Id > CSS by Class > CSS by Tag > Ordering(Tie)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   For "index2.html"   */
+
+/* #firstId{
+    background-color: pink;
+} */
+ 
+/* 
+Above code go in place of "<link rel="stylesheet" href="./style.css">" in "index2.html" file . So, 
+priority order will be: id > tag that's why background color of "h1" will be pink.
+*/

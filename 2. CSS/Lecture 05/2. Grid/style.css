@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 30px;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+   
+    display: grid;
+    /* grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px; */
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding: 10px;
+    height: 400px;  /* includes content height, padding, border because of box-sizing: border-box; */
+    width: 400px;   /* includes content width, padding, border  because of box-sizing: border-box; */
+    background-color: aqua;
+}
+/* 
+1fr = 1 fraction of the available space
+2fr = 2 fraction of the available space
+Available space can be divided in terms of fractions
+fractions are only applicable inside grid and flexbox
+*/
+
+.First{
+    background-color: orange; 
+}
+/*
+if padding & gap is added in .container then it will be subtracted from the width and height of the container
+Means, each box will be of size 185px X 185px
+(400 - 10 (gap) - 10 (gap) - 10 (padding) - 10 (padding)) / 2 = 185px
+*/
+/* if padding & gap is not added in .container then each box will be of size 200px X 200px
+(400 / 2) = 200px
+*/
+
+.Second{
+    background-color: green;
+}
+
+.Third{
+    background-color: red;
+}
+
+.Fourth{
+    background-color: blueviolet;
+}

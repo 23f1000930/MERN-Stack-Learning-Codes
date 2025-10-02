@@ -1,0 +1,84 @@
+h1{
+    background-color: orange;
+    height: 300px;
+    width: 300px;
+    /* height & width etc.  applicable only on "Content" of Box Model of CSS */
+
+
+
+
+    /* For Introducing Border, We Have To Introduce, These Three Properties */
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: green; */
+    /* Or */
+    /* border: 10px solid green; */
+    /* border: solid 10px green; */
+    
+
+
+
+    /* border: 10px solid green;
+    padding: 10px;
+    margin: 30px; */
+    /* With the help of "Padding" we can change the distance b/w "Border" & "Content" /*
+    /* With the help of "Margin" we can change the distance b/w "Borders" of different html elements /*
+
+
+
+
+    /* border-top: 10px solid black;
+    border-right: 10px solid aquamarine;
+    border-bottom: 10px solid blueviolet; */
+
+
+
+
+
+    /* border: 10px solid black;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 60px; */
+
+
+
+
+    /* border: 10px solid black;
+    padding: 10px 20px 30px 40px; */
+    /*      Top Right Bottom Left   and like this same for "margin"  */
+
+
+
+
+    /* border: 10px solid black;
+    padding: 20px 40px; */
+    /*    Top-Bottom Left-Right   and like this same for "margin"  */
+
+
+
+
+    /* border: 10px solid black;
+    margin-top: 50px;
+    margin-left: 30px; */
+
+
+
+
+    border: 10px solid black;
+    padding: 20px 40px;
+    margin: 50px 20px 30px 40px;
+    border-radius: 50px;
+
+}
+
+h2{
+    background-color: pink;
+    border: 2px solid blue;
+}
+
+p{
+    background-color:aquamarine;
+    padding: 20px;
+    border: 5px solid blue;
+    margin: 35px;
+}
