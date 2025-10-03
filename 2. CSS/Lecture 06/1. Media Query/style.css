@@ -1,0 +1,59 @@
+.container{
+    height: 400px;
+    width: 400px;
+    font-size: 50px;
+    background-color: aqua;
+}
+
+
+
+
+
+/* 
+Means, if device width is less than or equal to 600px, then apply the following styles to the class "container"
+and "screen" means it is for computer, tablet, mobile etc.
+*/
+
+
+/* @media screen and (max-width:900px) {
+    .container{
+        background-color: green;
+        font-size: 40px;
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    .container{
+        height: 300px;
+        width: 300px;
+        font-size: 30px;
+        background-color: pink;
+    }
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:600px) {
+    .container{
+        background-color: orange;
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container{
+        background-color: green;
+        font-size: 80px;
+    }
+}

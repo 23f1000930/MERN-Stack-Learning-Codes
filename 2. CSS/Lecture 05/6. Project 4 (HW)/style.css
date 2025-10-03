@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+    height: 600px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+}
+
+.Box {
+    background-color: aquamarine;
+}
+
+.First {
+    grid-row: 1/3;
+    background-color: red;
+}
+
+.Second {
+   grid-column: 2/4;
+   background-color: aqua;
+}
+
+.Third {
+    grid-column: 4/6;
+    background-color: burlywood;
+}
+
+.Fourth {
+    grid-row: 2/4;
+    background-color: burlywood;
+}
+
+.Fifth {
+    grid-column: 3/5;
+    grid-row: 2/4;
+    background-color: white;
+}
+
+.Sixth {
+    grid-row: 2/5;
+    grid-column: 5/6;
+    background-color: red;
+}
+
+.Seventh {
+    grid-row: 3/5;
+    background-color: white;
+}
+
+.Eighth {
+    grid-column: 2/4;
+    background-color: red;
+}
+
+.Ninth {
+    background-color: aqua;
+}

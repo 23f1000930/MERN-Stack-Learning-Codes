@@ -1,0 +1,66 @@
+.container{
+    height: 200px;
+    width: 200px;
+    /* background-color: aqua; */
+    /* background-color: orange; */
+
+    /* box-shadow: 10px 10px blue; */
+    /* Here, 1st one is offset-x, 2nd one is offset-y, 3rd one is color of shadow */
+    /* +ve offset-x starts from right of container & -ve offset-x starts from left of container */
+    /* +ve offset-y starts from bottom of container & -ve offset-y starts from top of container */
+    /* offset defines, width of the shadow in x & y directions */
+
+
+
+
+    /* box-shadow: 20px 20px 0px 10px blue; */
+
+    /* box-shadow: 20px 20px 10px 30px blue; */
+    /* Here, 1st one is offset-x, 2nd one is offset-y, 3rd one is blur-radius, 4th one is spread-radius, 5th one is color of shadow */
+    /* +ve blur-radius defines how much blur you want to apply on shadow */
+
+    /* 
+    By default, size(height & width) of original shadow of html element is equal to the size of that html element.
+    So, +ve spread-radius defines how much you want to increase the size of shadow in all directions 
+    */
+
+
+
+
+
+
+    
+    
+    /* box-shadow: inset 10px 10px blue; */
+    /* 
+    Here, 1st one is inset, 2nd one is offset-x, 3rd one is offset-y, 4th one is color of shadow.
+    And inset is used to create shadow to appear top-left edge of the container/html element.
+    */
+
+
+
+
+
+
+
+
+
+    /* Making The Sun */
+    /* background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 00px 0px 10px 10px red; */
+
+
+
+
+
+
+
+
+    /* Last Concept of This Lecture */
+    background-color: lightgreen;
+    overflow: scroll;
+
+}
+
+/* offset-x offset-y blur radius spread-radius */
