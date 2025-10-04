@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.box{
+    height: 250px;
+    width: 250px;
+    background-color: orange;
+    cursor: pointer;
+
+    border-radius: 20%;
+    /* transform: translateY(-300px); */
+    /* transform: translate(200px,300px); */
+    /* transform: rotate(40deg); */
+    /* transform: skewY(30deg); */
+
+    transition: all 3s;  /* helps in smooth transition of properties when hovered but not necessary */
+    
+}
+/* 
+
+*/
+
+.box:hover{
+    background-color: purple;
+    
+
+    /* 
+    If we want to increase the without changing the position of other elements then we do not use
+    height and width property but we use "scale" property of transform
+    */
+    /* height: 300px;
+    width: 300px; */
+
+    /* SCALE PROPERTY IN TRANSFORM */
+
+    /* Scales the size of an element in all directions, as no. of times spcified in the braces*/
+    transform: scale(2);
+
+    /* Scales the size of an element along the Y-axis in bottom direction, as no. of times specified in the braces*/
+    transform: scaleY(2);
+
+    /* Scales the size of an element along the X-axis in right direction, as no. of times specified in the braces*/
+    transform: scaleX(2);
+
+
+
+
+
+    /* TRANSLATE PROPERTY IN TRANSFORM */
+
+    /* Changes the position of the element by 50px along the X-axis(right direction) and 100px along the Y-axis(bottom direction) with respect to its original position */
+    transform: translate(50px, 100px);
+
+    /* Changes the position of the element by 200px along the X-axis(right direction) with respect to its original position */
+    transform: translateX(200px);
+
+    /* Changes the position of the element by 200px along the Y-axis(bottom direction) with respect to its original position */
+    transform: translateY(200px);
+
+
+
+
+
+
+
+
+
+    /* SKEW PROPERTY IN TRANSFORM */
+
+    /* Skews the element by 30 degrees along the X-axis */
+    transform: skewX(30deg);
+
+    /* Skews the element by 30 degrees along the Y-axis */
+    transform: skewY(30deg);
+
+    /* Skews the element by 30 degrees along the X-axis and 20 degrees along the Y-axis */
+    transform: skew(30deg, 20deg);
+
+
+
+
+
+
+
+
+
+
+    /* ROTATE PROPERTY IN TRANSFORM */
+
+    /* Rotates the element by 50 degrees in anti-clockwise direction */
+    transform: rotate(50deg);
+
+    /* Rotates the element by 90 degrees along the X-axis */
+    transform: rotateX(75deg);
+
+    /* Rotates the element by 90 degrees along the Y-axis */
+    transform: rotateY(75deg);
+    
+
+
+    
+    /* -ve values given in all these properties will move the element in opposite direction */
+}

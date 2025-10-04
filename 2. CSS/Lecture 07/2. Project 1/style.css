@@ -20,7 +20,7 @@ body{
     width: 70%;
     border-radius: 5px;
     white-space: nowrap;
-    overflow: hidden; /* content not go outside the div, class names container */
+    overflow: hidden; /* content not go outside the div with class named container */
 }
 
 p{

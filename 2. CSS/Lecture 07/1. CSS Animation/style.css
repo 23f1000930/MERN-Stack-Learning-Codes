@@ -95,3 +95,7 @@ top-left---> top-right-->bottom-right-->bottom-left-->top-left
     }
 
 }
+/* 
+Here, 0%, 25%, 50%, 75%, and 100% represent different stages of the animation, allowing for more complex movements and transitions.
+or simply, 0%, 25%, 50%, 75%, and 100% refer to "time".
+*/

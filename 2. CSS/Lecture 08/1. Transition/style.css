@@ -1,0 +1,68 @@
+/* 
+Animation Vs Transition
+Animation:
+1. Animation is used to create complex animations with multiple keyframes.
+2. #MAIN DIFFERENCE==>Animation can run automatically without user interaction.
+3. Animation can be controlled using keyframes.
+Transition:
+1. Transition is used to create simple animations between two states.
+2. #MAIN DIFFERENCE==>Transition requires user interaction to start means for transition to occur,
+we need some trigger event/movement/action e.g., by hovering or clicking etc. to start.
+3. Transition can only animate between the initial and final state.
+*/
+
+
+
+
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.box{
+    height: 250px;
+    width: 250px;
+    background-color: orange;
+    cursor: pointer;
+
+    transition-property: background-color, height, width; /* transition-property: all; for applying transition on all properties */
+    transition-duration: 3s; /* Duration of transition effect */
+    transition-timing-function: ease-in; /* Specifies the speed curve of the transition effect */
+    transition-delay: 2s; /* Delay time before starting transition effect */
+
+    /* Transition Shorthand Property */
+    /* transition: all 3s ease-in 2s; */
+    /* transition: all 3s; */
+}
+/* 
+"transition-property" is used to specify the CSS property you want to animate.
+or in "transition-properties" we write CSS property/properties in which we want to apply transition effect.
+
+"transition-duration" is used to specify the duration in which transition effect happens.
+*/
+
+.box:hover{
+    background-color: purple;
+    height: 300px;
+    width: 300px;
+}
+/* 
+On hover on div class named "box" the background color will change to purple and height and width will increase to 300px in 3 seconds.
+*/

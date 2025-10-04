@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    /* position: relative; */  /* Way 1, for centering the class named "box" */
+    
+    /* Way 2, for centring the class named "box" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Way 1, for centering the class named "box" */
+    /* position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+
+    animation: moving;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 40%;
+    /* transform: rotate(30deg); */
+
+
+}
+/* 
+transform: translate(50%,50%);==> Means, move the element 50% relative of its own width to the left and 50% relative of its own height to the top.
+*/
+
+
+@keyframes moving {
+    from{
+       transform: rotate(0deg) ;
+    }
+    to{
+       transform:rotate(360deg);
+    } 
+}
+
+.sun{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    transform: translateX(250px);
+    border-radius: 40%;
+}

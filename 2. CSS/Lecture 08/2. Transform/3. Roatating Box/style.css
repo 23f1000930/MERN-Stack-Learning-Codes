@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+    perspective: 800px; /* to see the better effect of "transform: rotate()/rotateX()/rotateY()" */
+}
+/* 
+"perspective" property is used to give a 3D-space/depth effect by affecting the distance between the Z plane and the user.
+perspective: 800px distance b/t the Z plane(element) and user is 800px.
+
+And in transform: translateZ(200px); we say that move the element 200px towards the user with respect to its original position.
+So, the distance b/t the element and user now becomes 800px-200px=600px.
+
+If we give translateZ(-200px) then the distance b/t the element and user becomes 800px+200px=1000px.
+
+Used when we want to see the working of transformZ property in transform.
+Used to see the better effect of "transform: rotate()/rotateX()/rotateY()"
+*/
+
+.box{
+    height: 250px;
+    width: 250px;
+    background-color: orange;
+    cursor: pointer;
+
+    border-radius: 20%;
+
+
+    font-size: 50px;
+    color: white;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;  
+}
+
+@keyframes moving {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg);
+    }
+}
