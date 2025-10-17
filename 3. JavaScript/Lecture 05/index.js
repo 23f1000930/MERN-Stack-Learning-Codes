@@ -143,3 +143,4 @@
 
 // Time ke basis par seed ko lene se input predict ho sakta he jisse se output predict ho sakta he kyonki time same chal raha he
 // crypto library seed ko he random kar deti he
+// Seed means ----> input(beej jo boya gaya he)
